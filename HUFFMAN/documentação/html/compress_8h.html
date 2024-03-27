@@ -1,0 +1,549 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DOCUMENTAÇÃO HUFFMAN: Referência do Arquivo código/compress.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DOCUMENTAÇÃO HUFFMAN<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Compactador e descompactador usando Árvore de Huffman em C para Estrutura de Dados 2023.2</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ea7eb8caaa87dd07e892caf17a97e648.html">código</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência do Arquivo compress.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="common_8h_source.html">common.h</a>&quot;</code><br />
+</div>
+<p><a href="compress_8h_source.html">Ir para o código-fonte desse arquivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a438456d9cb0ba64e4d9a5042a4a069a6" id="r_a438456d9cb0ba64e4d9a5042a4a069a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a438456d9cb0ba64e4d9a5042a4a069a6">enqueue</a> (<a class="el" href="structnode.html">node</a> **queue, <a class="el" href="structnode.html">node</a> *left, <a class="el" href="structnode.html">node</a> *right, unsigned char byte, int priority)</td></tr>
+<tr class="separator:a438456d9cb0ba64e4d9a5042a4a069a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a4d29a21deb9224de804d23c04089eb" id="r_a9a4d29a21deb9224de804d23c04089eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a4d29a21deb9224de804d23c04089eb">read_bytes</a> (int *bytes_freq, FILE *input)</td></tr>
+<tr class="separator:a9a4d29a21deb9224de804d23c04089eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eebdfa3018337e038ab3516c50ed609" id="r_a6eebdfa3018337e038ab3516c50ed609"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6eebdfa3018337e038ab3516c50ed609">create_priority_queue</a> (<a class="el" href="structnode.html">node</a> **queue, int *bytes_freq)</td></tr>
+<tr class="separator:a6eebdfa3018337e038ab3516c50ed609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95715e49819801a844a3cc90d7536484" id="r_a95715e49819801a844a3cc90d7536484"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95715e49819801a844a3cc90d7536484">create_huffman_tree</a> (<a class="el" href="structnode.html">node</a> **queue)</td></tr>
+<tr class="separator:a95715e49819801a844a3cc90d7536484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b935fce9cd9b3ec94c6c2c2a0ac8ff8" id="r_a8b935fce9cd9b3ec94c6c2c2a0ac8ff8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b935fce9cd9b3ec94c6c2c2a0ac8ff8">write_pre_order_tree</a> (<a class="el" href="structnode.html">node</a> *root, FILE *output)</td></tr>
+<tr class="separator:a8b935fce9cd9b3ec94c6c2c2a0ac8ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f90cffb737293aab2ba35d3a4acc6d6" id="r_a5f90cffb737293aab2ba35d3a4acc6d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f90cffb737293aab2ba35d3a4acc6d6">get_tree_size</a> (<a class="el" href="structnode.html">node</a> *root, int *size)</td></tr>
+<tr class="separator:a5f90cffb737293aab2ba35d3a4acc6d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cd9305e800816d385b65e38bbeea852" id="r_a9cd9305e800816d385b65e38bbeea852"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9cd9305e800816d385b65e38bbeea852">int_to_byte</a> (int tree_size, int trash_size, unsigned char trash_tree_size[2])</td></tr>
+<tr class="separator:a9cd9305e800816d385b65e38bbeea852"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3988813e3f73876b6528afe23a1f40a" id="r_ab3988813e3f73876b6528afe23a1f40a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3988813e3f73876b6528afe23a1f40a">compress</a> (<a class="el" href="common_8h.html#aa3e6f6912c3130eaa67226684b97cdfc">dictionary</a> bytes_remap[256], <a class="el" href="structnode.html">node</a> *root, FILE *input, FILE *ouput)</td></tr>
+<tr class="separator:ab3988813e3f73876b6528afe23a1f40a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab07c802fd7d7e2971c0b40b2e693536d" id="r_ab07c802fd7d7e2971c0b40b2e693536d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab07c802fd7d7e2971c0b40b2e693536d">remap</a> (<a class="el" href="structnode.html">node</a> *root, <a class="el" href="common_8h.html#aa3e6f6912c3130eaa67226684b97cdfc">dictionary</a> bytes_map[256], unsigned long new_symbol, int i, int bit)</td></tr>
+<tr class="separator:ab07c802fd7d7e2971c0b40b2e693536d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Funções</h2>
+<a id="ab3988813e3f73876b6528afe23a1f40a" name="ab3988813e3f73876b6528afe23a1f40a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3988813e3f73876b6528afe23a1f40a">&#9670;&#160;</a></span>compress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void compress </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="common_8h.html#aa3e6f6912c3130eaa67226684b97cdfc">dictionary</a></td>          <td class="paramname"><span class="paramname"><em>bytes_remap</em>[256], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structnode.html">node</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>input</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>ouput</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  137</span>{</div>
+<div class="line"><span class="lineno">  138</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> new_byte = <span class="charliteral">&#39;\0&#39;</span>, original_byte;</div>
+<div class="line"><span class="lineno">  139</span>    <span class="keywordtype">short</span> free_bits = 8, new_symbol_size=0;</div>
+<div class="line"><span class="lineno">  140</span>    <a class="code hl_struct" href="structmap.html">dictionary</a> new_symbol;</div>
+<div class="line"><span class="lineno">  141</span>    fwrite(&amp;new_byte, 1, 2, output); <span class="comment">//deixa dois bytes livres no começo de output para as informações acerca do tamanho do lixo e da árvore.</span></div>
+<div class="line"><span class="lineno">  142</span>    <a class="code hl_function" href="compress_8c.html#a8b935fce9cd9b3ec94c6c2c2a0ac8ff8">write_pre_order_tree</a>(root, output); <span class="comment">//escreve os bytes da árvore em pré ordem</span></div>
+<div class="line"><span class="lineno">  143</span>    </div>
+<div class="line"><span class="lineno">  144</span>    <span class="comment">//loop para compactar os arquivos com os novos simbolos    </span></div>
+<div class="line"><span class="lineno">  145</span>    <span class="keywordflow">while</span>(1) </div>
+<div class="line"><span class="lineno">  146</span>    {</div>
+<div class="line"><span class="lineno">  147</span>        <span class="keywordflow">if</span>(new_symbol_size == 0 &amp;&amp; !(feof(input)))</div>
+<div class="line"><span class="lineno">  148</span>        {</div>
+<div class="line"><span class="lineno">  149</span>            fread(&amp;original_byte, 1, 1, input); <span class="comment">//lê um byte do arquivo de entrada e salva ele em original_byte</span></div>
+<div class="line"><span class="lineno">  150</span>            new_symbol = bytes_map[original_byte];</div>
+<div class="line"><span class="lineno">  151</span>            new_symbol_size = new_symbol.<a class="code hl_variable" href="structmap.html#a72240e7ead07ea0e9cb7deca9a554892">symbol_size</a>;</div>
+<div class="line"><span class="lineno">  152</span>        }</div>
+<div class="line"><span class="lineno">  153</span> </div>
+<div class="line"><span class="lineno">  154</span>        <span class="keywordflow">if</span>(!feof(input) &amp;&amp; free_bits == 0) <span class="comment">//quando esgota os bits livres de new_byte escreve ele no arquivo e reinicia para escrever o resto do new_symbol.byte</span></div>
+<div class="line"><span class="lineno">  155</span>        {</div>
+<div class="line"><span class="lineno">  156</span>            fwrite(&amp;new_byte, 1, 1, output);</div>
+<div class="line"><span class="lineno">  157</span>            new_byte = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><span class="lineno">  158</span>            free_bits = 8;</div>
+<div class="line"><span class="lineno">  159</span>        }</div>
+<div class="line"><span class="lineno">  160</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(feof(input))</div>
+<div class="line"><span class="lineno">  161</span>        {</div>
+<div class="line"><span class="lineno">  162</span>            fwrite(&amp;new_byte, 1, 1, output);</div>
+<div class="line"><span class="lineno">  163</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  164</span>        }</div>
+<div class="line"><span class="lineno">  165</span> </div>
+<div class="line"><span class="lineno">  166</span>        <span class="keywordflow">if</span>(new_symbol.<a class="code hl_variable" href="structmap.html#a30a03d02d5812d81020a0e07c6449196">symbol</a> &amp; (1UL &lt;&lt; (new_symbol_size-1)))</div>
+<div class="line"><span class="lineno">  167</span>        {</div>
+<div class="line"><span class="lineno">  168</span>            new_byte = <a class="code hl_function" href="common_8c.html#a36698c003ca0ed50eccd548292e74e49">set_bit</a>(new_byte, free_bits-1);</div>
+<div class="line"><span class="lineno">  169</span>        }</div>
+<div class="line"><span class="lineno">  170</span> </div>
+<div class="line"><span class="lineno">  171</span>        free_bits--;</div>
+<div class="line"><span class="lineno">  172</span>        new_symbol_size--;</div>
+<div class="line"><span class="lineno">  173</span>    }</div>
+<div class="line"><span class="lineno">  174</span>    </div>
+<div class="line"><span class="lineno">  175</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> trash_tree_size[2] = {<span class="charliteral">&#39;\0&#39;</span>};</div>
+<div class="line"><span class="lineno">  176</span>    <span class="keywordtype">int</span> tree_size = 0;</div>
+<div class="line"><span class="lineno">  177</span>    <a class="code hl_function" href="compress_8c.html#a5f90cffb737293aab2ba35d3a4acc6d6">get_tree_size</a>(root, &amp;tree_size);</div>
+<div class="line"><span class="lineno">  178</span>    <a class="code hl_function" href="compress_8c.html#a9cd9305e800816d385b65e38bbeea852">int_to_byte</a>(tree_size, free_bits, trash_tree_size);</div>
+<div class="line"><span class="lineno">  179</span>    fseek(output, 0, SEEK_SET);</div>
+<div class="line"><span class="lineno">  180</span>    fwrite(trash_tree_size, 1, 2, output);</div>
+<div class="line"><span class="lineno">  181</span>}</div>
+<div class="ttc" id="acommon_8c_html_a36698c003ca0ed50eccd548292e74e49"><div class="ttname"><a href="common_8c.html#a36698c003ca0ed50eccd548292e74e49">set_bit</a></div><div class="ttdeci">unsigned char set_bit(unsigned char byte, int bit)</div><div class="ttdef"><b>Definição</b> common.c:3</div></div>
+<div class="ttc" id="acompress_8c_html_a5f90cffb737293aab2ba35d3a4acc6d6"><div class="ttname"><a href="compress_8c.html#a5f90cffb737293aab2ba35d3a4acc6d6">get_tree_size</a></div><div class="ttdeci">void get_tree_size(node *root, int *size)</div><div class="ttdef"><b>Definição</b> compress.c:115</div></div>
+<div class="ttc" id="acompress_8c_html_a8b935fce9cd9b3ec94c6c2c2a0ac8ff8"><div class="ttname"><a href="compress_8c.html#a8b935fce9cd9b3ec94c6c2c2a0ac8ff8">write_pre_order_tree</a></div><div class="ttdeci">void write_pre_order_tree(node *root, FILE *output)</div><div class="ttdef"><b>Definição</b> compress.c:99</div></div>
+<div class="ttc" id="acompress_8c_html_a9cd9305e800816d385b65e38bbeea852"><div class="ttname"><a href="compress_8c.html#a9cd9305e800816d385b65e38bbeea852">int_to_byte</a></div><div class="ttdeci">void int_to_byte(int tree_size, int trash_size, unsigned char trash_tree_size[2])</div><div class="ttdef"><b>Definição</b> compress.c:125</div></div>
+<div class="ttc" id="astructmap_html"><div class="ttname"><a href="structmap.html">map</a></div><div class="ttdef"><b>Definição</b> common.h:31</div></div>
+<div class="ttc" id="astructmap_html_a30a03d02d5812d81020a0e07c6449196"><div class="ttname"><a href="structmap.html#a30a03d02d5812d81020a0e07c6449196">map::symbol</a></div><div class="ttdeci">unsigned long symbol</div><div class="ttdef"><b>Definição</b> common.h:33</div></div>
+<div class="ttc" id="astructmap_html_a72240e7ead07ea0e9cb7deca9a554892"><div class="ttname"><a href="structmap.html#a72240e7ead07ea0e9cb7deca9a554892">map::symbol_size</a></div><div class="ttdeci">short symbol_size</div><div class="ttdef"><b>Definição</b> common.h:32</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a95715e49819801a844a3cc90d7536484" name="a95715e49819801a844a3cc90d7536484"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95715e49819801a844a3cc90d7536484">&#9670;&#160;</a></span>create_huffman_tree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void create_huffman_tree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnode.html">node</a> **</td>          <td class="paramname"><span class="paramname"><em>queue</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   82</span>{</div>
+<div class="line"><span class="lineno">   83</span>    <span class="keywordflow">while</span> ((*queue)-&gt;next != NULL) <span class="comment">//navega na fila para transformar ela em árvore</span></div>
+<div class="line"><span class="lineno">   84</span>    {</div>
+<div class="line"><span class="lineno">   85</span>        <span class="comment">//pega dois elementos de menor prioridade</span></div>
+<div class="line"><span class="lineno">   86</span>        <span class="keywordtype">int</span> priority;</div>
+<div class="line"><span class="lineno">   87</span>        <a class="code hl_struct" href="structnode.html">node</a> *left = *queue;</div>
+<div class="line"><span class="lineno">   88</span>        *queue = (*queue)-&gt;<a class="code hl_variable" href="structnode.html#aad210fa7c160a49f6b9a3ffee592a2bc">next</a>;</div>
+<div class="line"><span class="lineno">   89</span>        <a class="code hl_struct" href="structnode.html">node</a> *right = *queue;</div>
+<div class="line"><span class="lineno">   90</span>        *queue = (*queue)-&gt;<a class="code hl_variable" href="structnode.html#aad210fa7c160a49f6b9a3ffee592a2bc">next</a>;</div>
+<div class="line"><span class="lineno">   91</span>        </div>
+<div class="line"><span class="lineno">   92</span>        <span class="keyword">struct </span><a class="code hl_struct" href="structdata.html">data</a> *<a class="code hl_variable" href="structdata.html#a5b9b2a65114f8263c48bf00e79b9d677">left_data</a> = (<a class="code hl_struct" href="structdata.html">data</a>*)left-&gt;<a class="code hl_variable" href="structnode.html#ae82853bbf3b0d2b71de205ae40799555">data</a>;</div>
+<div class="line"><span class="lineno">   93</span>        <span class="keyword">struct </span><a class="code hl_struct" href="structdata.html">data</a> *<a class="code hl_variable" href="structdata.html#a5b9b2a65114f8263c48bf00e79b9d677">right_data</a> = (<a class="code hl_struct" href="structdata.html">data</a>*)right-&gt;data;</div>
+<div class="line"><span class="lineno">   94</span> </div>
+<div class="line"><span class="lineno">   95</span>        <a class="code hl_variable" href="structdata.html#a5b9b2a65114f8263c48bf00e79b9d677">priority</a> = <a class="code hl_variable" href="structdata.html#a5b9b2a65114f8263c48bf00e79b9d677">left_data</a>-&gt;frequency + <a class="code hl_variable" href="structdata.html#a5b9b2a65114f8263c48bf00e79b9d677">right_data</a>-&gt;frequency; <span class="comment">//a frequencia do nó pai será a soma da frequencia dos dois nós filhos</span></div>
+<div class="line"><span class="lineno">   96</span>        <a class="code hl_function" href="compress_8c.html#a438456d9cb0ba64e4d9a5042a4a069a6">enqueue</a>(<a class="code hl_variable" href="structdata.html#a5b9b2a65114f8263c48bf00e79b9d677">queue</a>, left, right, <span class="charliteral">&#39;*&#39;</span>, <a class="code hl_variable" href="structdata.html#a5b9b2a65114f8263c48bf00e79b9d677">priority</a>); <span class="comment">//cria um nó pai com os filhos sendo os dois menores, remove eles da fila e enfileira o nó pai</span></div>
+<div class="line"><span class="lineno">   97</span>    }</div>
+<div class="line"><span class="lineno">   98</span>}</div>
+<div class="ttc" id="acompress_8c_html_a438456d9cb0ba64e4d9a5042a4a069a6"><div class="ttname"><a href="compress_8c.html#a438456d9cb0ba64e4d9a5042a4a069a6">enqueue</a></div><div class="ttdeci">void enqueue(node **queue, node *left, node *right, unsigned char byte, int priority)</div><div class="ttdef"><b>Definição</b> compress.c:4</div></div>
+<div class="ttc" id="astructdata_html"><div class="ttname"><a href="structdata.html">data</a></div><div class="ttdef"><b>Definição</b> common.h:25</div></div>
+<div class="ttc" id="astructdata_html_a5b9b2a65114f8263c48bf00e79b9d677"><div class="ttname"><a href="structdata.html#a5b9b2a65114f8263c48bf00e79b9d677">data::frequency</a></div><div class="ttdeci">long frequency</div><div class="ttdef"><b>Definição</b> common.h:27</div></div>
+<div class="ttc" id="astructnode_html"><div class="ttname"><a href="structnode.html">node</a></div><div class="ttdef"><b>Definição</b> common.h:18</div></div>
+<div class="ttc" id="astructnode_html_aad210fa7c160a49f6b9a3ffee592a2bc"><div class="ttname"><a href="structnode.html#aad210fa7c160a49f6b9a3ffee592a2bc">node::next</a></div><div class="ttdeci">node * next</div><div class="ttdef"><b>Definição</b> common.h:20</div></div>
+<div class="ttc" id="astructnode_html_ae82853bbf3b0d2b71de205ae40799555"><div class="ttname"><a href="structnode.html#ae82853bbf3b0d2b71de205ae40799555">node::data</a></div><div class="ttdeci">void * data</div><div class="ttdef"><b>Definição</b> common.h:19</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6eebdfa3018337e038ab3516c50ed609" name="a6eebdfa3018337e038ab3516c50ed609"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eebdfa3018337e038ab3516c50ed609">&#9670;&#160;</a></span>create_priority_queue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void create_priority_queue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnode.html">node</a> **</td>          <td class="paramname"><span class="paramname"><em>queue</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>bytes_freq</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   58</span>{</div>
+<div class="line"><span class="lineno">   59</span>    <span class="keywordtype">int</span> i, j;</div>
+<div class="line"><span class="lineno">   60</span>    <span class="keywordflow">for</span>(i=0; i&lt;256; i++) <span class="comment">//percorre a lista de frequencias 256 vezes (a quantidade de bytes possíveis)</span></div>
+<div class="line"><span class="lineno">   61</span>    {</div>
+<div class="line"><span class="lineno">   62</span>        <span class="keywordtype">int</span> priority=0, byte_index;</div>
+<div class="line"><span class="lineno">   63</span>        <span class="keywordflow">for</span>(j=0; j&lt;256; j++) <span class="comment">//percorre o a lista de frequencia dos bytes procurando a maior frequencia</span></div>
+<div class="line"><span class="lineno">   64</span>        {</div>
+<div class="line"><span class="lineno">   65</span>            <span class="keywordflow">if</span>(bytes_freq[j] &gt;= priority &amp;&amp; bytes_freq[j] &gt; 0)</div>
+<div class="line"><span class="lineno">   66</span>            {</div>
+<div class="line"><span class="lineno">   67</span>                byte_index = j;</div>
+<div class="line"><span class="lineno">   68</span>                priority = bytes_freq[j];</div>
+<div class="line"><span class="lineno">   69</span>            }</div>
+<div class="line"><span class="lineno">   70</span>        }</div>
+<div class="line"><span class="lineno">   71</span> </div>
+<div class="line"><span class="lineno">   72</span>        <span class="keywordflow">if</span>(priority &gt; 0) </div>
+<div class="line"><span class="lineno">   73</span>        {</div>
+<div class="line"><span class="lineno">   74</span>            bytes_freq[byte_index] = 0; <span class="comment">//zera a frequencia na lista de frequencia</span></div>
+<div class="line"><span class="lineno">   75</span>            <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <span class="keywordtype">byte</span> = byte_index; <span class="comment">//byte recebe o byte que tem maior frequencia</span></div>
+<div class="line"><span class="lineno">   76</span>            <a class="code hl_function" href="compress_8c.html#a438456d9cb0ba64e4d9a5042a4a069a6">enqueue</a>(queue, NULL, NULL, <span class="keywordtype">byte</span>, priority); <span class="comment">//enfileira o byte de maior frequencia</span></div>
+<div class="line"><span class="lineno">   77</span>        }</div>
+<div class="line"><span class="lineno">   78</span>    }</div>
+<div class="line"><span class="lineno">   79</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a438456d9cb0ba64e4d9a5042a4a069a6" name="a438456d9cb0ba64e4d9a5042a4a069a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a438456d9cb0ba64e4d9a5042a4a069a6">&#9670;&#160;</a></span>enqueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void enqueue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnode.html">node</a> **</td>          <td class="paramname"><span class="paramname"><em>queue</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structnode.html">node</a> *</td>          <td class="paramname"><span class="paramname"><em>left</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structnode.html">node</a> *</td>          <td class="paramname"><span class="paramname"><em>right</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char</td>          <td class="paramname"><span class="paramname"><em>byte</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>priority</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">    5</span>{</div>
+<div class="line"><span class="lineno">    6</span>    <a class="code hl_struct" href="structnode.html">node</a> *new_node = (<a class="code hl_struct" href="structnode.html">node</a>*) malloc(<span class="keyword">sizeof</span>(<a class="code hl_struct" href="structnode.html">node</a>)); <span class="comment">//aloca na memória espaço para new_node</span></div>
+<div class="line"><span class="lineno">    7</span>    <a class="code hl_struct" href="structdata.html">data</a> *new_data = (<a class="code hl_struct" href="structdata.html">data</a>*) malloc(<span class="keyword">sizeof</span>(<a class="code hl_struct" href="structdata.html">data</a>)); <span class="comment">//aloca na memória espaço para new_data</span></div>
+<div class="line"><span class="lineno">    8</span>    new_data-&gt;<a class="code hl_variable" href="structdata.html#a609166f7bf42431c3d1676913fd60398">byte</a> = byte; <span class="comment">//new_data-&gt;byte recebe o parâmetro byte </span></div>
+<div class="line"><span class="lineno">    9</span>    new_data-&gt;<a class="code hl_variable" href="structdata.html#a5b9b2a65114f8263c48bf00e79b9d677">frequency</a> = priority; <span class="comment">//new_data-&gt;frequency recebe o parametro prioridade</span></div>
+<div class="line"><span class="lineno">   10</span>    new_node-&gt;<a class="code hl_variable" href="structnode.html#ae82853bbf3b0d2b71de205ae40799555">data</a> = new_data; <span class="comment">//new_node-&gt;data aponta para new_data</span></div>
+<div class="line"><span class="lineno">   11</span>    new_node-&gt;<a class="code hl_variable" href="structnode.html#a7cbff55ff448f557223f79299056e9b1">left</a> = left; <span class="comment">//new_node-&gt;left recebe o parametro left</span></div>
+<div class="line"><span class="lineno">   12</span>    new_node-&gt;<a class="code hl_variable" href="structnode.html#abdc86d4c8604c481752953af3235fc47">right</a> = right; <span class="comment">//new_node-&gt;right recebe o parametro right</span></div>
+<div class="line"><span class="lineno">   13</span> </div>
+<div class="line"><span class="lineno">   14</span>    <span class="keywordflow">if</span>(left == NULL &amp;&amp; right == NULL) <span class="comment">//a inserção está ocorrendo na criação fila de prioridade</span></div>
+<div class="line"><span class="lineno">   15</span>    {</div>
+<div class="line"><span class="lineno">   16</span>        new_node-&gt;<a class="code hl_variable" href="structnode.html#aad210fa7c160a49f6b9a3ffee592a2bc">next</a> = *queue;</div>
+<div class="line"><span class="lineno">   17</span>        *queue = new_node;</div>
+<div class="line"><span class="lineno">   18</span>    }</div>
+<div class="line"><span class="lineno">   19</span>    <span class="keywordflow">else</span> <span class="comment">//enfileirando durante a criaçao da árvore</span></div>
+<div class="line"><span class="lineno">   20</span>    {</div>
+<div class="line"><span class="lineno">   21</span>        <a class="code hl_struct" href="structnode.html">node</a> *current = *queue;</div>
+<div class="line"><span class="lineno">   22</span>        <a class="code hl_struct" href="structnode.html">node</a> *previous = NULL;</div>
+<div class="line"><span class="lineno">   23</span>        </div>
+<div class="line"><span class="lineno">   24</span>        <span class="keywordflow">while</span> (current != NULL &amp;&amp; ((<a class="code hl_struct" href="structdata.html">data</a>*)current-&gt;<a class="code hl_variable" href="structnode.html#ae82853bbf3b0d2b71de205ae40799555">data</a>)-&gt;frequency &lt; new_data-&gt;frequency)</div>
+<div class="line"><span class="lineno">   25</span>        {</div>
+<div class="line"><span class="lineno">   26</span>            previous = current;</div>
+<div class="line"><span class="lineno">   27</span>            current = current-&gt;<a class="code hl_variable" href="structnode.html#aad210fa7c160a49f6b9a3ffee592a2bc">next</a>;</div>
+<div class="line"><span class="lineno">   28</span>        }</div>
+<div class="line"><span class="lineno">   29</span>        </div>
+<div class="line"><span class="lineno">   30</span>        new_node-&gt;<a class="code hl_variable" href="structnode.html#aad210fa7c160a49f6b9a3ffee592a2bc">next</a> = current;</div>
+<div class="line"><span class="lineno">   31</span> </div>
+<div class="line"><span class="lineno">   32</span>        <span class="keywordflow">if</span> (previous == NULL)</div>
+<div class="line"><span class="lineno">   33</span>        {</div>
+<div class="line"><span class="lineno">   34</span>            <span class="comment">// Se o novo nó for o primeiro da fila</span></div>
+<div class="line"><span class="lineno">   35</span>            *queue = new_node;</div>
+<div class="line"><span class="lineno">   36</span>        }</div>
+<div class="line"><span class="lineno">   37</span>        <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   38</span>        {</div>
+<div class="line"><span class="lineno">   39</span>            <span class="comment">// Se o novo nó for inserido no meio ou no fim da fila</span></div>
+<div class="line"><span class="lineno">   40</span>            previous-&gt;<a class="code hl_variable" href="structnode.html#aad210fa7c160a49f6b9a3ffee592a2bc">next</a> = new_node;</div>
+<div class="line"><span class="lineno">   41</span>        }</div>
+<div class="line"><span class="lineno">   42</span>    }</div>
+<div class="line"><span class="lineno">   43</span>}</div>
+<div class="ttc" id="astructdata_html_a609166f7bf42431c3d1676913fd60398"><div class="ttname"><a href="structdata.html#a609166f7bf42431c3d1676913fd60398">data::byte</a></div><div class="ttdeci">unsigned char byte</div><div class="ttdef"><b>Definição</b> common.h:26</div></div>
+<div class="ttc" id="astructnode_html_a7cbff55ff448f557223f79299056e9b1"><div class="ttname"><a href="structnode.html#a7cbff55ff448f557223f79299056e9b1">node::left</a></div><div class="ttdeci">node * left</div><div class="ttdef"><b>Definição</b> common.h:21</div></div>
+<div class="ttc" id="astructnode_html_abdc86d4c8604c481752953af3235fc47"><div class="ttname"><a href="structnode.html#abdc86d4c8604c481752953af3235fc47">node::right</a></div><div class="ttdeci">node * right</div><div class="ttdef"><b>Definição</b> common.h:22</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5f90cffb737293aab2ba35d3a4acc6d6" name="a5f90cffb737293aab2ba35d3a4acc6d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f90cffb737293aab2ba35d3a4acc6d6">&#9670;&#160;</a></span>get_tree_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void get_tree_size </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnode.html">node</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  116</span>{</div>
+<div class="line"><span class="lineno">  117</span>    <span class="keywordflow">if</span> (root != NULL) </div>
+<div class="line"><span class="lineno">  118</span>    {</div>
+<div class="line"><span class="lineno">  119</span>        (*size)++;</div>
+<div class="line"><span class="lineno">  120</span>        <a class="code hl_function" href="compress_8c.html#a5f90cffb737293aab2ba35d3a4acc6d6">get_tree_size</a>(root-&gt;<a class="code hl_variable" href="structnode.html#a7cbff55ff448f557223f79299056e9b1">left</a>, size);</div>
+<div class="line"><span class="lineno">  121</span>        <a class="code hl_function" href="compress_8c.html#a5f90cffb737293aab2ba35d3a4acc6d6">get_tree_size</a>(root-&gt;<a class="code hl_variable" href="structnode.html#abdc86d4c8604c481752953af3235fc47">right</a>, size);</div>
+<div class="line"><span class="lineno">  122</span>    }</div>
+<div class="line"><span class="lineno">  123</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9cd9305e800816d385b65e38bbeea852" name="a9cd9305e800816d385b65e38bbeea852"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cd9305e800816d385b65e38bbeea852">&#9670;&#160;</a></span>int_to_byte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void int_to_byte </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tree_size</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>trash_size</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char</td>          <td class="paramname"><span class="paramname"><em>trash_tree_size</em>[2]</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  126</span>{</div>
+<div class="line"><span class="lineno">  127</span>    trash_tree_size[0] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><span class="lineno">  128</span>    trash_tree_size[1] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><span class="lineno">  129</span>  </div>
+<div class="line"><span class="lineno">  130</span>    trash_tree_size[0] = trash_tree_size[0] | (trash_size &lt;&lt; 5); <span class="comment">//escreve nos tres primeiros bits do array o valor de trash_size</span></div>
+<div class="line"><span class="lineno">  131</span> </div>
+<div class="line"><span class="lineno">  132</span>    trash_tree_size[0] = trash_tree_size[0] | (tree_size &gt;&gt; 8); <span class="comment">//escreve nos bits restantes de trash_tree_size[0] os bits 12 a 8</span></div>
+<div class="line"><span class="lineno">  133</span>    trash_tree_size[1] = trash_tree_size[1] | (tree_size); <span class="comment">//escreve os bits de </span></div>
+<div class="line"><span class="lineno">  134</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9a4d29a21deb9224de804d23c04089eb" name="a9a4d29a21deb9224de804d23c04089eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a4d29a21deb9224de804d23c04089eb">&#9670;&#160;</a></span>read_bytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void read_bytes </td>
+          <td>(</td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>bytes_freq</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>input</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   46</span>{  </div>
+<div class="line"><span class="lineno">   47</span>    <span class="keywordflow">while</span>(1)</div>
+<div class="line"><span class="lineno">   48</span>    {</div>
+<div class="line"><span class="lineno">   49</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> byte;</div>
+<div class="line"><span class="lineno">   50</span>        fread(&amp;<span class="keywordtype">byte</span>, 1, 1, input); <span class="comment">// lê 1 byte do arquivo e armazena na variável byte</span></div>
+<div class="line"><span class="lineno">   51</span>        <span class="keywordflow">if</span> (feof(input)) <span class="keywordflow">return</span>; <span class="comment">// se o arquivo acabou sai do loop;</span></div>
+<div class="line"><span class="lineno">   52</span>        <span class="keywordtype">int</span> i = byte;</div>
+<div class="line"><span class="lineno">   53</span>        bytes_freq[i] += 1; <span class="comment">//soma 1 na frequencia do byte lido</span></div>
+<div class="line"><span class="lineno">   54</span>    }</div>
+<div class="line"><span class="lineno">   55</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab07c802fd7d7e2971c0b40b2e693536d" name="ab07c802fd7d7e2971c0b40b2e693536d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab07c802fd7d7e2971c0b40b2e693536d">&#9670;&#160;</a></span>remap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void remap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnode.html">node</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="common_8h.html#aa3e6f6912c3130eaa67226684b97cdfc">dictionary</a></td>          <td class="paramname"><span class="paramname"><em>bytes_map</em>[256], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long</td>          <td class="paramname"><span class="paramname"><em>new_symbol</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>i</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>bit</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  184</span>{</div>
+<div class="line"><span class="lineno">  185</span>    <span class="keywordflow">if</span> (root != NULL)</div>
+<div class="line"><span class="lineno">  186</span>    {</div>
+<div class="line"><span class="lineno">  187</span>        <span class="keywordflow">if</span> (i == 1)</div>
+<div class="line"><span class="lineno">  188</span>        {</div>
+<div class="line"><span class="lineno">  189</span>            <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> mask = 1UL &lt;&lt; bit;</div>
+<div class="line"><span class="lineno">  190</span>            new_symbol = new_symbol | mask;</div>
+<div class="line"><span class="lineno">  191</span>        }</div>
+<div class="line"><span class="lineno">  192</span>        </div>
+<div class="line"><span class="lineno">  193</span>        <span class="keywordflow">if</span>(root-&gt;<a class="code hl_variable" href="structnode.html#a7cbff55ff448f557223f79299056e9b1">left</a> == NULL &amp;&amp; root-&gt;<a class="code hl_variable" href="structnode.html#abdc86d4c8604c481752953af3235fc47">right</a> == NULL)</div>
+<div class="line"><span class="lineno">  194</span>        {</div>
+<div class="line"><span class="lineno">  195</span>            <span class="keywordtype">int</span> i = ((<a class="code hl_struct" href="structdata.html">data</a>*)root-&gt;<a class="code hl_variable" href="structnode.html#ae82853bbf3b0d2b71de205ae40799555">data</a>)-&gt;byte;</div>
+<div class="line"><span class="lineno">  196</span>            bytes_map[i].<a class="code hl_variable" href="structmap.html#a72240e7ead07ea0e9cb7deca9a554892">symbol_size</a> = (8*<span class="keyword">sizeof</span>(<span class="keywordtype">unsigned</span> long)) - bit;</div>
+<div class="line"><span class="lineno">  197</span>            bytes_map[i].<a class="code hl_variable" href="structmap.html#a30a03d02d5812d81020a0e07c6449196">symbol</a> = new_symbol &gt;&gt; bit;</div>
+<div class="line"><span class="lineno">  198</span>        }</div>
+<div class="line"><span class="lineno">  199</span>        <a class="code hl_function" href="compress_8c.html#ab07c802fd7d7e2971c0b40b2e693536d">remap</a>(root-&gt;<a class="code hl_variable" href="structnode.html#a7cbff55ff448f557223f79299056e9b1">left</a>, bytes_map, new_symbol, 0, bit-1);</div>
+<div class="line"><span class="lineno">  200</span>        <a class="code hl_function" href="compress_8c.html#ab07c802fd7d7e2971c0b40b2e693536d">remap</a>(root-&gt;<a class="code hl_variable" href="structnode.html#abdc86d4c8604c481752953af3235fc47">right</a>, bytes_map, new_symbol, 1, bit-1);</div>
+<div class="line"><span class="lineno">  201</span>    }</div>
+<div class="line"><span class="lineno">  202</span>}</div>
+<div class="ttc" id="acompress_8c_html_ab07c802fd7d7e2971c0b40b2e693536d"><div class="ttname"><a href="compress_8c.html#ab07c802fd7d7e2971c0b40b2e693536d">remap</a></div><div class="ttdeci">void remap(node *root, dictionary bytes_map[256], unsigned long new_symbol, int i, int bit)</div><div class="ttdef"><b>Definição</b> compress.c:183</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8b935fce9cd9b3ec94c6c2c2a0ac8ff8" name="a8b935fce9cd9b3ec94c6c2c2a0ac8ff8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b935fce9cd9b3ec94c6c2c2a0ac8ff8">&#9670;&#160;</a></span>write_pre_order_tree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void write_pre_order_tree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnode.html">node</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>output</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  100</span>{</div>
+<div class="line"><span class="lineno">  101</span>    <span class="keywordflow">if</span> (root != NULL) <span class="comment">//funciona como a funçao padrão para imprimir em pré-ordem com a alteraçao para escrever o byte no arquivo de saída</span></div>
+<div class="line"><span class="lineno">  102</span>    {</div>
+<div class="line"><span class="lineno">  103</span>        <span class="keywordflow">if</span>(root-&gt;<a class="code hl_variable" href="structnode.html#a7cbff55ff448f557223f79299056e9b1">left</a> == NULL &amp;&amp; root-&gt;<a class="code hl_variable" href="structnode.html#abdc86d4c8604c481752953af3235fc47">right</a> == NULL) </div>
+<div class="line"><span class="lineno">  104</span>        {</div>
+<div class="line"><span class="lineno">  105</span>            <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> flag = 92;</div>
+<div class="line"><span class="lineno">  106</span>            <span class="keywordflow">if</span> (((<a class="code hl_struct" href="structdata.html">data</a>*)root-&gt;<a class="code hl_variable" href="structnode.html#ae82853bbf3b0d2b71de205ae40799555">data</a>)-&gt;byte == 42 || ((<a class="code hl_struct" href="structdata.html">data</a>*)root-&gt;<a class="code hl_variable" href="structnode.html#ae82853bbf3b0d2b71de205ae40799555">data</a>)-&gt;byte == 92)</div>
+<div class="line"><span class="lineno">  107</span>            fwrite(&amp;flag, 1, 1,output);</div>
+<div class="line"><span class="lineno">  108</span>        }</div>
+<div class="line"><span class="lineno">  109</span>        fwrite(&amp;(((<a class="code hl_struct" href="structdata.html">data</a>*)root-&gt;<a class="code hl_variable" href="structnode.html#ae82853bbf3b0d2b71de205ae40799555">data</a>)-&gt;byte), 1, 1,output);</div>
+<div class="line"><span class="lineno">  110</span>        <a class="code hl_function" href="compress_8c.html#a8b935fce9cd9b3ec94c6c2c2a0ac8ff8">write_pre_order_tree</a>(root-&gt;<a class="code hl_variable" href="structnode.html#a7cbff55ff448f557223f79299056e9b1">left</a>, output);</div>
+<div class="line"><span class="lineno">  111</span>        <a class="code hl_function" href="compress_8c.html#a8b935fce9cd9b3ec94c6c2c2a0ac8ff8">write_pre_order_tree</a>(root-&gt;<a class="code hl_variable" href="structnode.html#abdc86d4c8604c481752953af3235fc47">right</a>, output);</div>
+<div class="line"><span class="lineno">  112</span>    }</div>
+<div class="line"><span class="lineno">  113</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DOCUMENTAÇÃO HUFFMAN: Referência do Arquivo código/common.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DOCUMENTAÇÃO HUFFMAN<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Compactador e descompactador usando Árvore de Huffman em C para Estrutura de Dados 2023.2</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ea7eb8caaa87dd07e892caf17a97e648.html">código</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência do Arquivo common.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="common_8h_source.html">common.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a36698c003ca0ed50eccd548292e74e49" id="r_a36698c003ca0ed50eccd548292e74e49"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36698c003ca0ed50eccd548292e74e49">set_bit</a> (unsigned char byte, int bit)</td></tr>
+<tr class="separator:a36698c003ca0ed50eccd548292e74e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ffdefcf20c4770347a601cae9a76464" id="r_a1ffdefcf20c4770347a601cae9a76464"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ffdefcf20c4770347a601cae9a76464">is_bit_set</a> (unsigned char byte, int bit)</td></tr>
+<tr class="separator:a1ffdefcf20c4770347a601cae9a76464"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae63fbebff8f296fc8dc091e43b8fa444" id="r_ae63fbebff8f296fc8dc091e43b8fa444"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae63fbebff8f296fc8dc091e43b8fa444">left_shift</a> (unsigned char byte, int shift_ammout)</td></tr>
+<tr class="separator:ae63fbebff8f296fc8dc091e43b8fa444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade23cc8cc082d56c08fb8fdfde1dc159" id="r_ade23cc8cc082d56c08fb8fdfde1dc159"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade23cc8cc082d56c08fb8fdfde1dc159">right_shift</a> (unsigned char byte, int shift_ammout)</td></tr>
+<tr class="separator:ade23cc8cc082d56c08fb8fdfde1dc159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55d798b8182bba8beb14e342326b66a8" id="r_a55d798b8182bba8beb14e342326b66a8"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55d798b8182bba8beb14e342326b66a8">create_output_file</a> (char *file_name, short operation)</td></tr>
+<tr class="separator:a55d798b8182bba8beb14e342326b66a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Funções</h2>
+<a id="a55d798b8182bba8beb14e342326b66a8" name="a55d798b8182bba8beb14e342326b66a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55d798b8182bba8beb14e342326b66a8">&#9670;&#160;</a></span>create_output_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FILE * create_output_file </td>
+          <td>(</td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>file_name</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short</td>          <td class="paramname"><span class="paramname"><em>operation</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   26</span>{</div>
+<div class="line"><span class="lineno">   27</span>    FILE *output;</div>
+<div class="line"><span class="lineno">   28</span>    <span class="keywordtype">char</span> output_file_name[<a class="code hl_define" href="common_8h.html#a6e83232df466f2e7cdf821f66df05a7e">MAX_FNAME</a>];</div>
+<div class="line"><span class="lineno">   29</span>    <span class="keywordflow">switch</span> (operation)</div>
+<div class="line"><span class="lineno">   30</span>    {</div>
+<div class="line"><span class="lineno">   31</span>        <span class="keywordflow">case</span> <a class="code hl_define" href="common_8h.html#a4aa43acdab3102556482bdf21c12c674">COMPRESS</a>:</div>
+<div class="line"><span class="lineno">   32</span>            sprintf(output_file_name, <span class="stringliteral">&quot;%s.huff&quot;</span>, file_name);</div>
+<div class="line"><span class="lineno">   33</span>            output = fopen(output_file_name, <span class="stringliteral">&quot;wb&quot;</span>);</div>
+<div class="line"><span class="lineno">   34</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   35</span>        <span class="keywordflow">case</span> <a class="code hl_define" href="common_8h.html#a8d4f78d26b325631239c15d27a6048be">UNCOMPRESS</a>:</div>
+<div class="line"><span class="lineno">   36</span>            <span class="keywordtype">int</span> size = strlen(file_name) - 5;</div>
+<div class="line"><span class="lineno">   37</span>            file_name[size] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><span class="lineno">   38</span>            sprintf(output_file_name, <span class="stringliteral">&quot;%s&quot;</span>, file_name);</div>
+<div class="line"><span class="lineno">   39</span>            output = fopen(output_file_name, <span class="stringliteral">&quot;wb&quot;</span>);</div>
+<div class="line"><span class="lineno">   40</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   41</span>    }</div>
+<div class="line"><span class="lineno">   42</span>    <span class="keywordflow">return</span> output;</div>
+<div class="line"><span class="lineno">   43</span>}</div>
+<div class="ttc" id="acommon_8h_html_a4aa43acdab3102556482bdf21c12c674"><div class="ttname"><a href="common_8h.html#a4aa43acdab3102556482bdf21c12c674">COMPRESS</a></div><div class="ttdeci">#define COMPRESS</div><div class="ttdef"><b>Definição</b> common.h:10</div></div>
+<div class="ttc" id="acommon_8h_html_a6e83232df466f2e7cdf821f66df05a7e"><div class="ttname"><a href="common_8h.html#a6e83232df466f2e7cdf821f66df05a7e">MAX_FNAME</a></div><div class="ttdeci">#define MAX_FNAME</div><div class="ttdef"><b>Definição</b> common.h:9</div></div>
+<div class="ttc" id="acommon_8h_html_a8d4f78d26b325631239c15d27a6048be"><div class="ttname"><a href="common_8h.html#a8d4f78d26b325631239c15d27a6048be">UNCOMPRESS</a></div><div class="ttdeci">#define UNCOMPRESS</div><div class="ttdef"><b>Definição</b> common.h:11</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1ffdefcf20c4770347a601cae9a76464" name="a1ffdefcf20c4770347a601cae9a76464"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ffdefcf20c4770347a601cae9a76464">&#9670;&#160;</a></span>is_bit_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool is_bit_set </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char</td>          <td class="paramname"><span class="paramname"><em>byte</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>bit</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   10</span>{</div>
+<div class="line"><span class="lineno">   11</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> mask = 1&lt;&lt;bit;</div>
+<div class="line"><span class="lineno">   12</span>    <span class="keywordflow">return</span> <span class="keywordtype">byte</span> &amp; mask;</div>
+<div class="line"><span class="lineno">   13</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae63fbebff8f296fc8dc091e43b8fa444" name="ae63fbebff8f296fc8dc091e43b8fa444"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae63fbebff8f296fc8dc091e43b8fa444">&#9670;&#160;</a></span>left_shift()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char left_shift </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char</td>          <td class="paramname"><span class="paramname"><em>byte</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>shift_ammout</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   16</span>{</div>
+<div class="line"><span class="lineno">   17</span>    <span class="keywordflow">return</span> <span class="keywordtype">byte</span> &lt;&lt; shift_ammout;</div>
+<div class="line"><span class="lineno">   18</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ade23cc8cc082d56c08fb8fdfde1dc159" name="ade23cc8cc082d56c08fb8fdfde1dc159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade23cc8cc082d56c08fb8fdfde1dc159">&#9670;&#160;</a></span>right_shift()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char right_shift </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char</td>          <td class="paramname"><span class="paramname"><em>byte</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>shift_ammout</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   21</span>{</div>
+<div class="line"><span class="lineno">   22</span>    <span class="keywordflow">return</span> <span class="keywordtype">byte</span> &gt;&gt; shift_ammout;</div>
+<div class="line"><span class="lineno">   23</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a36698c003ca0ed50eccd548292e74e49" name="a36698c003ca0ed50eccd548292e74e49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36698c003ca0ed50eccd548292e74e49">&#9670;&#160;</a></span>set_bit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char set_bit </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char</td>          <td class="paramname"><span class="paramname"><em>byte</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>bit</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">    4</span>{</div>
+<div class="line"><span class="lineno">    5</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> mask = 1&lt;&lt;bit;</div>
+<div class="line"><span class="lineno">    6</span>    <span class="keywordflow">return</span> <span class="keywordtype">byte</span> | mask;</div>
+<div class="line"><span class="lineno">    7</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

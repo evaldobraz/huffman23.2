@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DOCUMENTAÇÃO HUFFMAN: Código-Fonte de código/common.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DOCUMENTAÇÃO HUFFMAN<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Compactador e descompactador usando Árvore de Huffman em C para Estrutura de Dados 2023.2</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ea7eb8caaa87dd07e892caf17a97e648.html">código</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">common.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="common_8h.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef COMMON_H_INCLUDED</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define COMMON_H_INCLUDED</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="common_8h.html#a6e83232df466f2e7cdf821f66df05a7e">    9</a></span><span class="preprocessor">#define MAX_FNAME 256</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="common_8h.html#a4aa43acdab3102556482bdf21c12c674">   10</a></span><span class="preprocessor">#define COMPRESS 1</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="common_8h.html#a8d4f78d26b325631239c15d27a6048be">   11</a></span><span class="preprocessor">#define UNCOMPRESS 2</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="common_8h.html#a50afa9e04ca02519ba855eaad820d91f">   12</a></span><span class="preprocessor">#define PO_TREE_SCAPE 92 </span><span class="comment">//símbolo de escape da impressao em pré-ordem dá árvore</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="common_8h.html#aa3e6f6912c3130eaa67226684b97cdfc">   14</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structmap.html">map</a> <a class="code hl_struct" href="structmap.html">dictionary</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="common_8h.html#af4aeda155dbe167f1c1cf38cb65bf324">   15</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structnode.html">node</a> <a class="code hl_struct" href="structnode.html">node</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="common_8h.html#a493583f6fc164cf849745e01e4c04ab5">   16</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structdata.html">data</a> <a class="code hl_struct" href="structdata.html">data</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structnode.html">   18</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structnode.html">node</a>{</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="structnode.html#ae82853bbf3b0d2b71de205ae40799555">   19</a></span>    <span class="keywordtype">void</span> *<a class="code hl_variable" href="structnode.html#ae82853bbf3b0d2b71de205ae40799555">data</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="structnode.html#aad210fa7c160a49f6b9a3ffee592a2bc">   20</a></span>    <a class="code hl_struct" href="structnode.html">node</a> *<a class="code hl_variable" href="structnode.html#aad210fa7c160a49f6b9a3ffee592a2bc">next</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structnode.html#a7cbff55ff448f557223f79299056e9b1">   21</a></span>    <a class="code hl_struct" href="structnode.html">node</a> *<a class="code hl_variable" href="structnode.html#a7cbff55ff448f557223f79299056e9b1">left</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structnode.html#abdc86d4c8604c481752953af3235fc47">   22</a></span>    <a class="code hl_struct" href="structnode.html">node</a> *<a class="code hl_variable" href="structnode.html#abdc86d4c8604c481752953af3235fc47">right</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
+</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structdata.html">   25</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structdata.html">data</a>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structdata.html#a609166f7bf42431c3d1676913fd60398">   26</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_variable" href="structdata.html#a609166f7bf42431c3d1676913fd60398">byte</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structdata.html#a5b9b2a65114f8263c48bf00e79b9d677">   27</a></span>    <span class="keywordtype">long</span> <a class="code hl_variable" href="structdata.html#a5b9b2a65114f8263c48bf00e79b9d677">frequency</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
+</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structmap.html">   30</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structmap.html">map</a></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structmap.html#a72240e7ead07ea0e9cb7deca9a554892">   32</a></span>    <span class="keywordtype">short</span> <a class="code hl_variable" href="structmap.html#a72240e7ead07ea0e9cb7deca9a554892">symbol_size</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="structmap.html#a30a03d02d5812d81020a0e07c6449196">   33</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_variable" href="structmap.html#a30a03d02d5812d81020a0e07c6449196">symbol</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>};</div>
+</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_function" href="common_8h.html#a36698c003ca0ed50eccd548292e74e49">set_bit</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <span class="keywordtype">byte</span>, <span class="keywordtype">int</span> bit);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="common_8h.html#a7810c818c5a7e9205c9992de7d595b3a">   37</a></span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_function" href="common_8h.html#a7810c818c5a7e9205c9992de7d595b3a">unset_bit</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <span class="keywordtype">byte</span>, <span class="keywordtype">int</span> bit);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keywordtype">bool</span> <a class="code hl_function" href="common_8h.html#a1ffdefcf20c4770347a601cae9a76464">is_bit_set</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <span class="keywordtype">byte</span>, <span class="keywordtype">int</span> bit);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_function" href="common_8h.html#ae63fbebff8f296fc8dc091e43b8fa444">left_shift</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <span class="keywordtype">byte</span>, <span class="keywordtype">int</span> shift_ammout);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_function" href="common_8h.html#ade23cc8cc082d56c08fb8fdfde1dc159">right_shift</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <span class="keywordtype">byte</span>, <span class="keywordtype">int</span> shift_ammout);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>FILE* <a class="code hl_function" href="common_8h.html#a55d798b8182bba8beb14e342326b66a8">create_output_file</a>(<span class="keywordtype">char</span> *file_name, <span class="keywordtype">short</span> operation);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#endif </span><span class="comment">//COMMON_H_INCLUDED</span></div>
+<div class="ttc" id="acommon_8h_html_a1ffdefcf20c4770347a601cae9a76464"><div class="ttname"><a href="common_8h.html#a1ffdefcf20c4770347a601cae9a76464">is_bit_set</a></div><div class="ttdeci">bool is_bit_set(unsigned char byte, int bit)</div><div class="ttdef"><b>Definição</b> common.c:9</div></div>
+<div class="ttc" id="acommon_8h_html_a36698c003ca0ed50eccd548292e74e49"><div class="ttname"><a href="common_8h.html#a36698c003ca0ed50eccd548292e74e49">set_bit</a></div><div class="ttdeci">unsigned char set_bit(unsigned char byte, int bit)</div><div class="ttdef"><b>Definição</b> common.c:3</div></div>
+<div class="ttc" id="acommon_8h_html_a55d798b8182bba8beb14e342326b66a8"><div class="ttname"><a href="common_8h.html#a55d798b8182bba8beb14e342326b66a8">create_output_file</a></div><div class="ttdeci">FILE * create_output_file(char *file_name, short operation)</div><div class="ttdef"><b>Definição</b> common.c:25</div></div>
+<div class="ttc" id="acommon_8h_html_a7810c818c5a7e9205c9992de7d595b3a"><div class="ttname"><a href="common_8h.html#a7810c818c5a7e9205c9992de7d595b3a">unset_bit</a></div><div class="ttdeci">unsigned char unset_bit(unsigned char byte, int bit)</div></div>
+<div class="ttc" id="acommon_8h_html_ade23cc8cc082d56c08fb8fdfde1dc159"><div class="ttname"><a href="common_8h.html#ade23cc8cc082d56c08fb8fdfde1dc159">right_shift</a></div><div class="ttdeci">unsigned char right_shift(unsigned char byte, int shift_ammout)</div><div class="ttdef"><b>Definição</b> common.c:20</div></div>
+<div class="ttc" id="acommon_8h_html_ae63fbebff8f296fc8dc091e43b8fa444"><div class="ttname"><a href="common_8h.html#ae63fbebff8f296fc8dc091e43b8fa444">left_shift</a></div><div class="ttdeci">unsigned char left_shift(unsigned char byte, int shift_ammout)</div><div class="ttdef"><b>Definição</b> common.c:15</div></div>
+<div class="ttc" id="astructdata_html"><div class="ttname"><a href="structdata.html">data</a></div><div class="ttdef"><b>Definição</b> common.h:25</div></div>
+<div class="ttc" id="astructdata_html_a5b9b2a65114f8263c48bf00e79b9d677"><div class="ttname"><a href="structdata.html#a5b9b2a65114f8263c48bf00e79b9d677">data::frequency</a></div><div class="ttdeci">long frequency</div><div class="ttdef"><b>Definição</b> common.h:27</div></div>
+<div class="ttc" id="astructdata_html_a609166f7bf42431c3d1676913fd60398"><div class="ttname"><a href="structdata.html#a609166f7bf42431c3d1676913fd60398">data::byte</a></div><div class="ttdeci">unsigned char byte</div><div class="ttdef"><b>Definição</b> common.h:26</div></div>
+<div class="ttc" id="astructmap_html"><div class="ttname"><a href="structmap.html">map</a></div><div class="ttdef"><b>Definição</b> common.h:31</div></div>
+<div class="ttc" id="astructmap_html_a30a03d02d5812d81020a0e07c6449196"><div class="ttname"><a href="structmap.html#a30a03d02d5812d81020a0e07c6449196">map::symbol</a></div><div class="ttdeci">unsigned long symbol</div><div class="ttdef"><b>Definição</b> common.h:33</div></div>
+<div class="ttc" id="astructmap_html_a72240e7ead07ea0e9cb7deca9a554892"><div class="ttname"><a href="structmap.html#a72240e7ead07ea0e9cb7deca9a554892">map::symbol_size</a></div><div class="ttdeci">short symbol_size</div><div class="ttdef"><b>Definição</b> common.h:32</div></div>
+<div class="ttc" id="astructnode_html"><div class="ttname"><a href="structnode.html">node</a></div><div class="ttdef"><b>Definição</b> common.h:18</div></div>
+<div class="ttc" id="astructnode_html_a7cbff55ff448f557223f79299056e9b1"><div class="ttname"><a href="structnode.html#a7cbff55ff448f557223f79299056e9b1">node::left</a></div><div class="ttdeci">node * left</div><div class="ttdef"><b>Definição</b> common.h:21</div></div>
+<div class="ttc" id="astructnode_html_aad210fa7c160a49f6b9a3ffee592a2bc"><div class="ttname"><a href="structnode.html#aad210fa7c160a49f6b9a3ffee592a2bc">node::next</a></div><div class="ttdeci">node * next</div><div class="ttdef"><b>Definição</b> common.h:20</div></div>
+<div class="ttc" id="astructnode_html_abdc86d4c8604c481752953af3235fc47"><div class="ttname"><a href="structnode.html#abdc86d4c8604c481752953af3235fc47">node::right</a></div><div class="ttdeci">node * right</div><div class="ttdef"><b>Definição</b> common.h:22</div></div>
+<div class="ttc" id="astructnode_html_ae82853bbf3b0d2b71de205ae40799555"><div class="ttname"><a href="structnode.html#ae82853bbf3b0d2b71de205ae40799555">node::data</a></div><div class="ttdeci">void * data</div><div class="ttdef"><b>Definição</b> common.h:19</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

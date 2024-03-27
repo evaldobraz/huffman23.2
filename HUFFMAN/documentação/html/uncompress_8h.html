@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DOCUMENTAÇÃO HUFFMAN: Referência do Arquivo código/uncompress.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DOCUMENTAÇÃO HUFFMAN<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Compactador e descompactador usando Árvore de Huffman em C para Estrutura de Dados 2023.2</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ea7eb8caaa87dd07e892caf17a97e648.html">código</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência do Arquivo uncompress.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="common_8h_source.html">common.h</a>&quot;</code><br />
+</div>
+<p><a href="uncompress_8h_source.html">Ir para o código-fonte desse arquivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a6f0872b327f18383aeedce6279c655db" id="r_a6f0872b327f18383aeedce6279c655db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f0872b327f18383aeedce6279c655db">build_tree</a> (<a class="el" href="structnode.html">node</a> **root, FILE *input, int tree_size)</td></tr>
+<tr class="separator:a6f0872b327f18383aeedce6279c655db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a358bf5a6c9fb3335db4c1def85baf203" id="r_a358bf5a6c9fb3335db4c1def85baf203"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a358bf5a6c9fb3335db4c1def85baf203">get_trash_tree_size</a> (FILE *input, int *trash_size, int *tree_size)</td></tr>
+<tr class="separator:a358bf5a6c9fb3335db4c1def85baf203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7accd5412759f9ab99b81587a068ce8" id="r_aa7accd5412759f9ab99b81587a068ce8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7accd5412759f9ab99b81587a068ce8">uncompress</a> (<a class="el" href="structnode.html">node</a> *root, FILE *input, FILE *output, int trash_size, unsigned long file_size)</td></tr>
+<tr class="separator:aa7accd5412759f9ab99b81587a068ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a598a6ff1f98cc8c02edc658341a5c3" id="r_a1a598a6ff1f98cc8c02edc658341a5c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a598a6ff1f98cc8c02edc658341a5c3">get_file_size</a> (FILE *input, unsigned long *file_size)</td></tr>
+<tr class="separator:a1a598a6ff1f98cc8c02edc658341a5c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Funções</h2>
+<a id="a6f0872b327f18383aeedce6279c655db" name="a6f0872b327f18383aeedce6279c655db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f0872b327f18383aeedce6279c655db">&#9670;&#160;</a></span>build_tree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void build_tree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnode.html">node</a> **</td>          <td class="paramname"><span class="paramname"><em>root</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>input</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tree_size</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">    5</span>{</div>
+<div class="line"><span class="lineno">    6</span>    <span class="keywordflow">if</span> (tree_size &lt;= 0) <span class="keywordflow">return</span>; </div>
+<div class="line"><span class="lineno">    7</span>    tree_size--;</div>
+<div class="line"><span class="lineno">    8</span> </div>
+<div class="line"><span class="lineno">    9</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> byte;</div>
+<div class="line"><span class="lineno">   10</span>    <span class="keywordtype">int</span> n = fread(&amp;<span class="keywordtype">byte</span>, 1, 1, input);</div>
+<div class="line"><span class="lineno">   11</span> </div>
+<div class="line"><span class="lineno">   12</span>    <span class="keywordflow">if</span> (<span class="keywordtype">byte</span> == <a class="code hl_define" href="common_8h.html#a50afa9e04ca02519ba855eaad820d91f">PO_TREE_SCAPE</a>) n += fread(&amp;<span class="keywordtype">byte</span>, 1, 1, input); <span class="comment">//PO_TREE_SCAPE = BYTE 5C</span></div>
+<div class="line"><span class="lineno">   13</span> </div>
+<div class="line"><span class="lineno">   14</span>    <a class="code hl_struct" href="structnode.html">node</a> *new_node = (<a class="code hl_struct" href="structnode.html">node</a>*) malloc(<span class="keyword">sizeof</span>(<a class="code hl_struct" href="structnode.html">node</a>));</div>
+<div class="line"><span class="lineno">   15</span>    <a class="code hl_struct" href="structdata.html">data</a> *new_data = (<a class="code hl_struct" href="structdata.html">data</a>*) malloc(<span class="keyword">sizeof</span>(<a class="code hl_struct" href="structdata.html">data</a>));</div>
+<div class="line"><span class="lineno">   16</span>    new_data-&gt;<a class="code hl_variable" href="structdata.html#a609166f7bf42431c3d1676913fd60398">byte</a> = byte;</div>
+<div class="line"><span class="lineno">   17</span>    new_data-&gt;<a class="code hl_variable" href="structdata.html#a5b9b2a65114f8263c48bf00e79b9d677">frequency</a> = 0;</div>
+<div class="line"><span class="lineno">   18</span>    new_node-&gt;<a class="code hl_variable" href="structnode.html#ae82853bbf3b0d2b71de205ae40799555">data</a> = new_data;</div>
+<div class="line"><span class="lineno">   19</span>    new_node-&gt;<a class="code hl_variable" href="structnode.html#a7cbff55ff448f557223f79299056e9b1">left</a> = NULL;</div>
+<div class="line"><span class="lineno">   20</span>    new_node-&gt;<a class="code hl_variable" href="structnode.html#abdc86d4c8604c481752953af3235fc47">right</a> = NULL;</div>
+<div class="line"><span class="lineno">   21</span> </div>
+<div class="line"><span class="lineno">   22</span>    <span class="keywordflow">if</span> (<span class="keywordtype">byte</span> == <span class="charliteral">&#39;*&#39;</span> &amp;&amp; n == 1) <span class="comment">//nó interno</span></div>
+<div class="line"><span class="lineno">   23</span>    {</div>
+<div class="line"><span class="lineno">   24</span>        <a class="code hl_function" href="uncompress_8c.html#a6f0872b327f18383aeedce6279c655db">build_tree</a>(&amp;(new_node-&gt;<a class="code hl_variable" href="structnode.html#a7cbff55ff448f557223f79299056e9b1">left</a>), input, tree_size);</div>
+<div class="line"><span class="lineno">   25</span>        <a class="code hl_function" href="uncompress_8c.html#a6f0872b327f18383aeedce6279c655db">build_tree</a>(&amp;(new_node-&gt;<a class="code hl_variable" href="structnode.html#abdc86d4c8604c481752953af3235fc47">right</a>), input, tree_size);</div>
+<div class="line"><span class="lineno">   26</span>    }</div>
+<div class="line"><span class="lineno">   27</span> </div>
+<div class="line"><span class="lineno">   28</span>    *root = new_node;</div>
+<div class="line"><span class="lineno">   29</span>}</div>
+<div class="ttc" id="acommon_8h_html_a50afa9e04ca02519ba855eaad820d91f"><div class="ttname"><a href="common_8h.html#a50afa9e04ca02519ba855eaad820d91f">PO_TREE_SCAPE</a></div><div class="ttdeci">#define PO_TREE_SCAPE</div><div class="ttdef"><b>Definição</b> common.h:12</div></div>
+<div class="ttc" id="astructdata_html"><div class="ttname"><a href="structdata.html">data</a></div><div class="ttdef"><b>Definição</b> common.h:25</div></div>
+<div class="ttc" id="astructdata_html_a5b9b2a65114f8263c48bf00e79b9d677"><div class="ttname"><a href="structdata.html#a5b9b2a65114f8263c48bf00e79b9d677">data::frequency</a></div><div class="ttdeci">long frequency</div><div class="ttdef"><b>Definição</b> common.h:27</div></div>
+<div class="ttc" id="astructdata_html_a609166f7bf42431c3d1676913fd60398"><div class="ttname"><a href="structdata.html#a609166f7bf42431c3d1676913fd60398">data::byte</a></div><div class="ttdeci">unsigned char byte</div><div class="ttdef"><b>Definição</b> common.h:26</div></div>
+<div class="ttc" id="astructnode_html"><div class="ttname"><a href="structnode.html">node</a></div><div class="ttdef"><b>Definição</b> common.h:18</div></div>
+<div class="ttc" id="astructnode_html_a7cbff55ff448f557223f79299056e9b1"><div class="ttname"><a href="structnode.html#a7cbff55ff448f557223f79299056e9b1">node::left</a></div><div class="ttdeci">node * left</div><div class="ttdef"><b>Definição</b> common.h:21</div></div>
+<div class="ttc" id="astructnode_html_abdc86d4c8604c481752953af3235fc47"><div class="ttname"><a href="structnode.html#abdc86d4c8604c481752953af3235fc47">node::right</a></div><div class="ttdeci">node * right</div><div class="ttdef"><b>Definição</b> common.h:22</div></div>
+<div class="ttc" id="astructnode_html_ae82853bbf3b0d2b71de205ae40799555"><div class="ttname"><a href="structnode.html#ae82853bbf3b0d2b71de205ae40799555">node::data</a></div><div class="ttdeci">void * data</div><div class="ttdef"><b>Definição</b> common.h:19</div></div>
+<div class="ttc" id="auncompress_8c_html_a6f0872b327f18383aeedce6279c655db"><div class="ttname"><a href="uncompress_8c.html#a6f0872b327f18383aeedce6279c655db">build_tree</a></div><div class="ttdeci">void build_tree(node **root, FILE *input, int tree_size)</div><div class="ttdef"><b>Definição</b> uncompress.c:4</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1a598a6ff1f98cc8c02edc658341a5c3" name="a1a598a6ff1f98cc8c02edc658341a5c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a598a6ff1f98cc8c02edc658341a5c3">&#9670;&#160;</a></span>get_file_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void get_file_size </td>
+          <td>(</td>
+          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>input</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long *</td>          <td class="paramname"><span class="paramname"><em>file_size</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   73</span>{</div>
+<div class="line"><span class="lineno">   74</span>    fseek(input, 0, SEEK_END);</div>
+<div class="line"><span class="lineno">   75</span> </div>
+<div class="line"><span class="lineno">   76</span>    *file_size = ftell(input);</div>
+<div class="line"><span class="lineno">   77</span> </div>
+<div class="line"><span class="lineno">   78</span>    fseek(input, 0, SEEK_SET);</div>
+<div class="line"><span class="lineno">   79</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a358bf5a6c9fb3335db4c1def85baf203" name="a358bf5a6c9fb3335db4c1def85baf203"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a358bf5a6c9fb3335db4c1def85baf203">&#9670;&#160;</a></span>get_trash_tree_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void get_trash_tree_size </td>
+          <td>(</td>
+          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>input</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>trash_size</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>tree_size</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   32</span>{</div>
+<div class="line"><span class="lineno">   33</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> trash_tree_size[2] = {<span class="charliteral">&#39;\0&#39;</span>};</div>
+<div class="line"><span class="lineno">   34</span>    fread(trash_tree_size, 1, 2, input);</div>
+<div class="line"><span class="lineno">   35</span>    </div>
+<div class="line"><span class="lineno">   36</span>    *trash_size =  (trash_tree_size[0] &gt;&gt; 5) &amp; 7;</div>
+<div class="line"><span class="lineno">   37</span>    *tree_size =  ((trash_tree_size[0] &amp; 31) &lt;&lt; 8) | trash_tree_size[1];</div>
+<div class="line"><span class="lineno">   38</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa7accd5412759f9ab99b81587a068ce8" name="aa7accd5412759f9ab99b81587a068ce8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7accd5412759f9ab99b81587a068ce8">&#9670;&#160;</a></span>uncompress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void uncompress </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnode.html">node</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>input</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>output</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>trash_size</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long</td>          <td class="paramname"><span class="paramname"><em>file_size</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   41</span>{</div>
+<div class="line"><span class="lineno">   42</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_function" href="compress_8c.html#a9a4d29a21deb9224de804d23c04089eb">read_bytes</a> = 1UL;</div>
+<div class="line"><span class="lineno">   43</span>    <span class="keywordtype">int</span> bit = 7, is_last_byte = 0;</div>
+<div class="line"><span class="lineno">   44</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> byte;</div>
+<div class="line"><span class="lineno">   45</span>    fread(&amp;<span class="keywordtype">byte</span>, 1, 1, input);</div>
+<div class="line"><span class="lineno">   46</span>    <a class="code hl_struct" href="structnode.html">node</a> *temp_root = root;</div>
+<div class="line"><span class="lineno">   47</span> </div>
+<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">while</span>(1)</div>
+<div class="line"><span class="lineno">   49</span>    {</div>
+<div class="line"><span class="lineno">   50</span>        temp_root = root;</div>
+<div class="line"><span class="lineno">   51</span> </div>
+<div class="line"><span class="lineno">   52</span>        <span class="keywordflow">while</span>(temp_root-&gt;<a class="code hl_variable" href="structnode.html#a7cbff55ff448f557223f79299056e9b1">left</a> != NULL &amp;&amp; temp_root-&gt;<a class="code hl_variable" href="structnode.html#abdc86d4c8604c481752953af3235fc47">right</a> != NULL)</div>
+<div class="line"><span class="lineno">   53</span>        {</div>
+<div class="line"><span class="lineno">   54</span>            <span class="keywordflow">if</span>(<a class="code hl_function" href="common_8c.html#a1ffdefcf20c4770347a601cae9a76464">is_bit_set</a>(<span class="keywordtype">byte</span>, bit)) temp_root = temp_root-&gt;<a class="code hl_variable" href="structnode.html#abdc86d4c8604c481752953af3235fc47">right</a>;</div>
+<div class="line"><span class="lineno">   55</span>            <span class="keywordflow">else</span> temp_root = temp_root-&gt;<a class="code hl_variable" href="structnode.html#a7cbff55ff448f557223f79299056e9b1">left</a>;</div>
+<div class="line"><span class="lineno">   56</span>            bit--;</div>
+<div class="line"><span class="lineno">   57</span> </div>
+<div class="line"><span class="lineno">   58</span>            <span class="keywordflow">if</span>(bit &lt; 0)</div>
+<div class="line"><span class="lineno">   59</span>            {</div>
+<div class="line"><span class="lineno">   60</span>                bit = 7;</div>
+<div class="line"><span class="lineno">   61</span>                fread(&amp;<span class="keywordtype">byte</span>, 1, 1, input);</div>
+<div class="line"><span class="lineno">   62</span>                <a class="code hl_function" href="compress_8c.html#a9a4d29a21deb9224de804d23c04089eb">read_bytes</a>++;</div>
+<div class="line"><span class="lineno">   63</span>                is_last_byte = (<a class="code hl_function" href="compress_8c.html#a9a4d29a21deb9224de804d23c04089eb">read_bytes</a> == file_size);</div>
+<div class="line"><span class="lineno">   64</span>            }</div>
+<div class="line"><span class="lineno">   65</span>        }</div>
+<div class="line"><span class="lineno">   66</span>        fwrite((&amp;((<a class="code hl_struct" href="structdata.html">data</a>*)temp_root-&gt;<a class="code hl_variable" href="structnode.html#ae82853bbf3b0d2b71de205ae40799555">data</a>)-&gt;byte), 1, 1, output);</div>
+<div class="line"><span class="lineno">   67</span>        </div>
+<div class="line"><span class="lineno">   68</span>        <span class="keywordflow">if</span>(is_last_byte &amp;&amp; bit &lt;= trash_size) <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   69</span>    }</div>
+<div class="line"><span class="lineno">   70</span>}</div>
+<div class="ttc" id="acommon_8c_html_a1ffdefcf20c4770347a601cae9a76464"><div class="ttname"><a href="common_8c.html#a1ffdefcf20c4770347a601cae9a76464">is_bit_set</a></div><div class="ttdeci">bool is_bit_set(unsigned char byte, int bit)</div><div class="ttdef"><b>Definição</b> common.c:9</div></div>
+<div class="ttc" id="acompress_8c_html_a9a4d29a21deb9224de804d23c04089eb"><div class="ttname"><a href="compress_8c.html#a9a4d29a21deb9224de804d23c04089eb">read_bytes</a></div><div class="ttdeci">void read_bytes(int *bytes_freq, FILE *input)</div><div class="ttdef"><b>Definição</b> compress.c:45</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>
